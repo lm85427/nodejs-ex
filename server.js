@@ -82,6 +82,18 @@ app.get('/', function (req, res) {
   res.render('index.html', {});
 });
 
+app.get('/mfa', function (req, res) {
+  // res.render('index.html', { pageCountMessage : null});
+  // res.render('index.html', { form : reg_form.toHTML()});
+  res.render('mfa.html', {});
+});
+
+app.get('/success', function (req, res) {
+  // res.render('index.html', { pageCountMessage : null});
+  // res.render('index.html', { form : reg_form.toHTML()});
+  res.render('success.html', {});
+});
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use(login);
