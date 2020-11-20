@@ -3,7 +3,7 @@ var express = require('express'),
     app     = express(),
     morgan  = require('morgan');
 
-var forms = require('forms');
+/*var forms = require('forms');
 var fields = forms.fields;
 var validators = forms.validators;
 
@@ -15,7 +15,7 @@ var reg_form = forms.create({
     validators: [validators.matchField('password')]
   }),
   email: fields.email()
-});
+});*/
     
 Object.assign=require('object-assign')
 
