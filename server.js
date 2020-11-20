@@ -71,8 +71,8 @@ var initDb = function(callback) {
 };
 
 app.get('/', function (req, res) {
-    //res.render('index.html', { pageCountMessage : null});
-  res.render(reg_form.toHTML());
+  //res.render('index.html', { pageCountMessage : null});
+  res.render('index.html', { form : reg_form.toHTML()});
 });
 
 // error handling
