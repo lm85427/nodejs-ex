@@ -216,8 +216,19 @@ pre {
 <body>
 <section class='container'>
     <h1>Client Form</h1>
-    <form action="" method="GET">
-        {form}
+    <form action="" method="POST">
+        <label for="account">Account:</label><br>
+        <input type="text" id="account" name="account"><br>
+        <label for="isin">ISIN:</label><br>
+        <input type="text" id="isin" name="isin">
+        <label for="denomination">Denomination:</label><br>
+        <input type="text" id="denomination" name="denomination">
+        <label for="value">Value:</label><br>
+        <input type="text" id="value" name="value">
+        <label for="currency">Currency:</label><br>
+        <input type="text" id="currency" name="currency">
+        <label for="type">Type:</label><br>
+        <input type="text" id="type" name="type">
         <input type="submit" />
     </form>
 </section>
